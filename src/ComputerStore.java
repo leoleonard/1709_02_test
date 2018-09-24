@@ -10,5 +10,14 @@ public class ComputerStore {
 
         comp1.printInfo();
         comp2.printInfo();
+
+        ComputerUpgrade upgrade = new ComputerUpgrade();
+        upgrade.addMemory(comp1, 100);
+
+        ComputerUpgrade upgrade2 = new ComputerUpgrade();
+        upgrade.addMemory(comp2, 200);
+
+        comp1.printInfo();
+        comp2.printInfo();
     }
 }
