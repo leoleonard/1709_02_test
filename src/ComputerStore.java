@@ -19,5 +19,20 @@ public class ComputerStore {
 
         comp1.printInfo();
         comp2.printInfo();
+
+        ComputerFactory factory = new ComputerFactory();
+        Computer comp3 = factory.create("Intel2", 827);
+        Computer comp4 = factory.create("AMD2", 112);
+
+        comp3.printInfo();
+        comp4.printInfo();
+
+        ComputerUpgrade upgrade3 = new ComputerUpgrade();
+        upgrade3.addMemory(comp3, 100);
+        upgrade3.addMemory(comp4, 30);
+
+        comp3.printInfo();
+        comp4.printInfo();
+
     }
 }
